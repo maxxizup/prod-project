@@ -3,6 +3,7 @@ import './styles/index.scss'
 import { classNames } from "shared/lib/classNames/classNames";
 import { useTheme } from "app/providers/ThemeProvider"
 import { AppRouter } from "app/providers/router"
+import { Navbar } from "widgets/Navbar";
 
 
 const App = () => {
@@ -10,10 +11,9 @@ const App = () => {
 
     return (
         <div className={classNames('App', {}, [theme])}>
-            <button onClick={toggleTheme}>TOGGLE</button>
-            <Link to={'/about'}>About</Link>
-            <Link to={'/'}>Main</Link>
+            <Navbar />
             <AppRouter />
+            <button onClick={toggleTheme}>TOGGLE</button>
         </div>
     )
 }
