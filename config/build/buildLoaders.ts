@@ -3,13 +3,10 @@ import webpack from 'webpack';
 import { BuildOptions } from './types/config';
 
 export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
-
-    // Если не используем TS - нужен babel-loader, который транспилирует стандарт js в старый,
-    // чтобы он поддерживался старыми браузерами
-    const typescriptLoader = {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
+    
+    const svgLoader = {
+        test: /\.svg$/,
+        use: ['@svgr/webpack'],
     }
 
     const cssLoader = {
@@ -32,8 +29,28 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
             "sass-loader",
         ],
     }
+    
+    // Если не используем TS - нужен babel-loader, который транспилирует стандарт js в старый,
+    // чтобы он поддерживался старыми браузерами
+    const typescriptLoader = {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+    }
+
+    const fileLoader = {
+        test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+        use: [
+            {
+                loader: 'file-loader',
+            },
+        ],
+    }
+
 
     return [
+        fileLoader,
+        svgLoader,
         typescriptLoader,
         cssLoader,
     ]
