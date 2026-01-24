@@ -13,7 +13,6 @@ const App = () => {
         <div className={classNames('App', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
-                sdasdas
                 <div className="content-page">
                     <Sidebar />
                     <AppRouter />
