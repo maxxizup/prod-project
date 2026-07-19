@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "./build/",
     // Подсвечивает все места, где не указан тип
     // Однако это не означает, что теперь вовсе нельзя использовать any.
     // Это означает лишь то, что в подобных ситуациях разработчик должен явно писать any.
@@ -26,7 +26,8 @@
     // import * as React from 'react';
     // можно писать такой:
     // import React from 'react';
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["jest", "node"]
   },
   "ts-node": {
     "compilerOptions": {
