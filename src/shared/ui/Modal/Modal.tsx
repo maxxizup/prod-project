@@ -65,7 +65,7 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal>
-            <div className={classNames(cls.Modal, mods, [className, 'App-modal'])}>
+            <div className={classNames(cls.Modal, mods, [className, theme, 'App_modal'])}>
                 <div className={cls.overlay} onClick={closeHandler}>
                     <div className={cls.content} onClick={onContentClick}>
                         {children}
