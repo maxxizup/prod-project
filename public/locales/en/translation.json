@@ -1,5 +1,10 @@
 {
+  "Lorem": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptates.",
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
+  "Войти": "Login",
   "Главная": "Main",
+  "Короткий язык": "En",
   "О сайте": "About",
   "Обновить страницу": "Reload page",
   "Перевод": "Translate",
@@ -7,7 +12,5 @@
   "Тестовый пример": "Test example",
   "Тогл": "Toggle",
   "Что-то пошло не так": "Something went wrong",
-  "Язык": "English",
-  "Короткий язык": "En",
-  "Войти": "Sign In"
+  "Язык": "English"
 }

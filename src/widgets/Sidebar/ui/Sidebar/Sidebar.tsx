@@ -21,7 +21,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         setCollapsed((prev) => !prev);
     };
 
-    const { t } = useTranslation();
+    const { t } = useTranslation('');
 
     return (
         <div
@@ -48,7 +48,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                     <MainIcon
                         className={cls.icon}
                     />
-                    <span className={cls.link}>{t('Главная')}</span>
+                    <span className={cls.link}>{t('translation:Главная')}</span>
                 </AppLink>
                 <AppLink
                     theme={AppLinkTheme.SECONDARY}
@@ -58,7 +58,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
                     <AboutIcon
                         className={cls.icon}
                     />
-                    <span className={cls.link}>{t('О сайте')}</span>
+                    <span className={cls.link}>{t('translation:О сайте')}</span>
                 </AppLink>
             </div>
             <div className={cls.switchers}>

@@ -7,12 +7,14 @@ i18n
         lng: 'ru',
         fallbackLng: 'ru',
         debug: false,
-
+        ns: ['translation'],
+        defaultNS: 'translation',
         interpolation: {
             escapeValue: false, // not needed for react!!
         },
 
-        resources: { en: { translations: {} } },
+        resources: { ru: { translation: {} } },
+        parseMissingKeyHandler: (key) => key.split(':').pop(),
     });
 
 export default i18n;

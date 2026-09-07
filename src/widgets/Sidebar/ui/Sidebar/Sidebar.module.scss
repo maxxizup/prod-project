@@ -41,6 +41,9 @@
 .link {
     margin-left: 10px;
     opacity: 1;
+    transition: opacity 0.3s, width 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .icon {
