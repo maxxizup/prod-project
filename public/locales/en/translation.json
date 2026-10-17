@@ -3,6 +3,8 @@
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Войти": "Login",
+  "Вы ввели неверный логин или пароль": "Incorrect login or password",
+  "Выйти": "Logout",
   "Главная": "Main",
   "Короткий язык": "En",
   "О сайте": "About",
@@ -11,6 +13,7 @@
   "Страница не найдена": "Page not found",
   "Тестовый пример": "Test example",
   "Тогл": "Toggle",
+  "Форма авторизации": "Auth form",
   "Что-то пошло не так": "Something went wrong",
   "Язык": "English"
 }
