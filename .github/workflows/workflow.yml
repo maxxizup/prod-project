@@ -43,3 +43,4 @@ jobs:
         with:
           name: loki-results
           path: .loki/
+          include-hidden-files: true
